@@ -1,0 +1,48 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,span,p{
+    margin: 0;
+    padding: 0;
+}
+
+/* common css end */
+/* nav start */
+#navbarSupportedContent li a{
+
+font-family: Poppins;
+font-size: 15px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+color: #353535;
+text-transform: uppercase;
+padding: 18px 22px 5px;
+position: relative;
+
+}
+#navbarSupportedContent li a::before{
+    content:"";
+    width: 0%;
+    height: 1px;
+    background-color: #353535;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+#navbarSupportedContent li:hover a::before {
+    width: 100%;
+}
+
+/* nav end */
